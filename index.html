@@ -10,9 +10,34 @@
   <header>
     <h1>🎬 Catálogo de Filmes</h1>
     <input type="text" id="searchInput" placeholder="Buscar filmes..." />
+    <button id="profileBtn">👤</button>
   </header>
 
   <main id="genresContainer"></main>
+
+  <!-- Modal do perfil -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Perfil do Usuário</h2>
+      <img id="userAvatar" src="https://via.placeholder.com/80" alt="Avatar" />
+      <p id="userName">Usuário: Convidado</p>
+      <h3>Filmes salvos:</h3>
+      <ul id="savedMoviesList"></ul>
+    </div>
+  </div>
+
+  <!-- Modal fullscreen do filme -->
+  <div id="fullscreenMovieModal" class="fullscreen-modal">
+    <div class="fullscreen-content">
+      <button id="backButton" class="back-btn">← Voltar</button>
+      <img id="fsMoviePoster" src="" alt="Poster do filme" />
+      <h2 id="fsMovieTitle"></h2>
+      <p id="fsMovieYear" class="movie-year"></p>
+      <p id="fsMovieOverview"></p>
+      <div id="fsMovieRating" class="rating"></div>
+    </div>
+  </div>
 
   <footer>
     <p>Feito com ❤️ por Kalysson Cabral</p>
